@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
   ShieldAlert,
+  ShieldCheck,
   Wand2,
   CheckCheck,
   FileText,
@@ -26,6 +27,7 @@ export const TOOLS_LIST = [
     category: 'Detection & Refinement',
     items: [
       { name: 'AI Detector', href: '/tools/ai-detector', icon: ShieldAlert, badge: 'Popular' },
+      { name: 'Plagiarism Checker', href: '/tools/plagiarism-checker', icon: ShieldCheck },
       { name: 'AI Humanizer', href: '/tools/humanizer', icon: Wand2, badge: 'Hot' },
       { name: 'Grammar Checker', href: '/tools/grammar-checker', icon: CheckCheck },
       { name: 'AI Paraphraser', href: '/tools/paraphraser', icon: FileText },

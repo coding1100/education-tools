@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
+import { Toaster } from 'react-hot-toast';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </main>
         </div>
+        <Toaster position="top-right" />
       </body>
     </html>
   );
